@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+html {
+  font-size: 14px;
+}
+
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.header {
+    border-bottom: 1px solid black;
+    height: 300px;
+    width: 100%;
+    background-color:black;
+    justify-content:center;
+    border-top: 1px solid black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-position: center;
+    background-image: url("../images/13.jpeg");
+    justify-content:center;
+    max-width: 100%;
+    background-size: cover;
+}
+
+#mynavbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+background-color:black;
+    color:white;
+    block-size:auto;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+#phonenumber {
+    block-size: auto;
+    background-color: black;
+    color: white;
+    float:right;
+    margin-left:800px !important;
+}
+
+#ProductsContainer {
+    position: absolute;
+    top: 350px;
+    left: 0;
+    font-family: 'Lato', sans-serif;
+}
+.text-center{
+    position:absolute;
+    margin-top:310px;
+    margin-left:30%;
+}
+footer{
+    position:absolute;
+    margin-top:500px;
+}
