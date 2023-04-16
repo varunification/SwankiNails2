@@ -3,8 +3,6 @@ html {
   font-size: 14px;
 }
 
-
-
 html {
   position: relative;
   min-height: 100%;
@@ -14,32 +12,39 @@ body {
   margin-bottom: 60px;
 }
 .header {
-    border-bottom: 1px solid black;
-    height: 300px;
-    width: 100%;
-    background-color:black;
-    justify-content:center;
+    /* Set a black border at the top and bottom of the header */
     border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    /* Set a fixed position at the top of the page */
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
-    background-position: center;
+    /* Set a background image with cover size and centered position */
     background-image: url("../images/13.jpeg");
-    justify-content:center;
-    max-width: 100%;
     background-size: cover;
+    background-position: center;
+    /* Set a height of 300px and adjust the width to fit the page */
+    height: 300px;
+    width: 100%;
 }
 
+
 #mynavbar {
-    position: absolute;
+    /* Set a fixed position at the top of the page */
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 3;
-background-color:black;
-    color:white;
-    block-size:auto;
+    /* Set a black background color and white text color */
+    background-color: black;
+    color: white;
+    /* Set some padding to create space between the content and the edges */
+    padding: 10px;
+    font-size: 18px;
+    width:auto;
 }
+
 
 .navbar-nav {
     display: flex;
@@ -51,7 +56,7 @@ background-color:black;
     background-color: black;
     color: white;
     float:right;
-    margin-left:800px !important;
+    margin-left:600px !important;
 }
 
 #ProductsContainer {
@@ -65,7 +70,59 @@ background-color:black;
     margin-top:310px;
     margin-left:30%;
 }
+.row {
+    position: absolute;
+    margin-top: 310px;
+
+}
 footer{
     position:absolute;
-    margin-top:500px;
+    margin-top:1500px;
 }
+.badge {
+    float: right;
+    background-color: #8b0000;
+    block-size: auto;
+    font-size: medium;
+    margin-right: 50px;
+    border-radius: 10px;
+}
+@media (max-width: 768px) {
+    .badge {
+        display: none;
+    }
+}
+.card {
+    margin-bottom: 1rem;
+}
+
+.card-img-top {
+    height: 200px; /* Set the height of the image */
+    object-fit: cover; /* Crop the image to fit */
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.btn-primary {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    padding: 0.5rem;
+}
+.d-flex{
+    margin-top:320px;
+}
+
