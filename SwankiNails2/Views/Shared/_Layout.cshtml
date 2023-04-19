@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - SwankiNails</title>
-
+    <link rel="stylesheet" href="~/css/footer.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
@@ -19,7 +19,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link"  asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" asp-controller="Home" asp-action="About">About</a>
@@ -33,7 +33,7 @@
 
 
                     </ul>
-                    <span class="navbar-nav ms-auto" id="phonenumber">Phone number: 123-456-7890</span>
+                    <span class="navbar-nav ms-auto" id="phonenumber">Mobile number: 8484866248</span>
                 </div>
                 
             </div>
@@ -44,18 +44,72 @@
         </div>
     </header>
     <div class="container my-auto">
-        <span class="badge badge-danger"><a href="/appointments" class=" text-white">Book Appointment</a></span>
+        <span class="badge badge-danger"><a asp-controller="Bookings" asp-action="Form" class=" text-white">Book Appointment</a></span>
 
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <!-- footer section start -->
+    <footer id="footer">
         <div class="container">
-            &copy; 2023 - SwankiNails - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="useful-link">
+                        <h2>Useful Links</h2>
+                        <img src="./assets/images/about/home_line.png" alt="" class="img-fluid">
+                        <div class="use-links">
+                            <li><a asp-controller="Home" asp-action="Index"><i class="fa-solid fa-angles-right"></i> Home</a></li>
+                            <li><a asp-controller="Home" asp-action="About"><i class="fa-solid fa-angles-right"></i> About Us</a></li>
+                            
+                            <li><a asp-controller="Home" asp-action="Contact"><i class="fa-solid fa-angles-right"></i> Contact</a></li>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="social-links">
+                        <h2>Follow Us</h2>
+                        <div class="social-icons">
+                           
+                            <div id="insta"><a href="https://www.Instagram.com/nails_swank?igshid=ZDdkNTZiNTM="><img class="rounded" src="https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/81af6121f84c41a5b4391d7d37fce12a.png" /></a></div>
+                            
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-md-4">
+                    <div class="address">
+                        <h2>Address</h2>
+                        <img src="./assets/images/about/home_line.png" alt="" class="img-fluid">
+                        <div class="address-links">
+                            <li class="address1">
+                                <i class="fa-solid fa-location-dot"></i> Building A7, Kumar Park Infinia, Phursungi, Pune, Maharashtra, 412308.
+                            </li>
+                            <li><a href=""><i class="fa-solid fa-phone"></i> +91 8484866248</a></li>
+                            <li><a href=""><i class="fa-solid fa-envelope"></i> mail@1234567.com</a></li>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
+
     </footer>
+    <!-- footer section end -->
+    <!-- footer copy right section start -->
+    <section id="copy-right">
+        <div class="copy-right-sec">
+            <i class="fa-solid fa-copyright"></i>
+            <p>© 2023 Swanky Nails</p>
+
+
+        </div>
+
+    </section>
+    <!-- footer copy right section end -->
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

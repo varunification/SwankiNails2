@@ -1,4 +1,25 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿
+    // Email validation
+    const emailInput = document.getElementById('email');
+    const emailError = document.getElementById('email-error');
 
-// Write your JavaScript code.
+    emailInput.addEventListener('input', function() {
+      if (!emailInput.checkValidity()) {
+        emailError.textContent = 'Please enter a valid email address.';
+      } else {
+        emailError.textContent = '';
+      }
+    });
+
+    // Phone number validation
+    const mobileInput = document.getElementById('mobile');
+    const mobileError = document.getElementById('mobile-error');
+    const phoneRegex = /^\d{10}$/;
+
+    mobileInput.addEventListener('input', function() {
+      if (!phoneRegex.test(mobileInput.value)) {
+        mobileError.textContent = 'Please enter a 10-digit phone number.';
+      } else {
+        mobileError.textContent = '';
+      }
+    });

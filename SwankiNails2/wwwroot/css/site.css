@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Source+Sans+Pro:wght@300&display=swap');
+
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 html {
@@ -16,7 +18,7 @@ body {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     /* Set a fixed position at the top of the page */
-    position: absolute;
+    position:absolute;
     top: 0;
     left: 0;
     z-index: 1;
@@ -42,8 +44,10 @@ body {
     /* Set some padding to create space between the content and the edges */
     padding: 10px;
     font-size: 18px;
-    width:auto;
+    /* Set width to 100% to fill the full page width */
+    width: 100%;
 }
+
 
 
 .navbar-nav {
@@ -76,8 +80,8 @@ body {
 
 }
 footer{
-    position:absolute;
-    margin-top:1500px;
+    
+    margin-top:1000px;
 }
 .badge {
     float: right;
@@ -87,12 +91,9 @@ footer{
     margin-right: 50px;
     border-radius: 10px;
 }
-@media (max-width: 768px) {
-    .badge {
-        display: none;
-    }
-}
+
 .card {
+    flex:auto;
     margin-bottom: 1rem;
 }
 
@@ -125,4 +126,29 @@ footer{
 .d-flex{
     margin-top:320px;
 }
+/* 
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map. 
+ */
+.text-center2 {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
 
+
+#address{
+    font-size:large;
+}
+#insta {
+    background-color: black;
+    height: 45px;
+    width: 45px;
+    border-radius: 10px; /* Set the border radius to create rounded corners */
+    overflow: hidden; /* Clip the image to the border radius */
+}
+.container{
+    margin-top:300px!important;
+}
+.thankyou {
+    margin-top: 300px !important;
+}
