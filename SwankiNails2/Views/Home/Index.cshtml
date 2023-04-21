@@ -32,7 +32,7 @@
             <div class="card-body">
                 <h5 class="card-title">Gel Nail paint both hands at just Rs. 499/-</h5>
                 
-                <a href="@Url.Action("serviceForm", "Bookings", new { service = "Manicure" })" class="btn btn-primary my-3">Book Appointment</a>
+                <a href="@Url.Action("serviceForm", "Bookings", new { service = "Nail paint" })" class="btn btn-primary my-3">Book Appointment</a>
             </div>
         </div>
     </div>
@@ -42,7 +42,7 @@
             <div class="card-body">
                 <h5 class="card-title">Acrylic/Gel extensions both hands at Just Rs 1299/- (with gel paint)</h5>
                
-                <a href="#" class="btn btn-primary my-3">Book Appointment</a>
+                <a href="@Url.Action("serviceForm", "Bookings", new { service = "Acrylic/Gel extensions" })" class="btn btn-primary my-3">Book Appointment</a>
             </div>
         </div>
     </div>
@@ -52,7 +52,7 @@
             <div class="card-body">
                 <h5 class="card-title">Manicure And Pedicure starting from Rs 400/- and Rs 500/- respectively.</h5>
                  
-                <a href="#" class="btn btn-primary my-3S">Book Appointment</a>
+                <a href="@Url.Action("serviceForm", "Bookings", new { service = "Manicure And Pedicure" })" class="btn btn-primary my-3">Book Appointment</a>
             </div>
         </div>
     </div>
@@ -60,6 +60,6 @@
 
 @using (Html.BeginForm("serviceForm", "Bookings", FormMethod.Get))
 {
-    @Html.Hidden("service", "Manicure")
-    <input type="submit" value="Book Appointment" class="btn btn-primary my-3" />
+    
+    <input type="submit" value="Book Appointment" class="btn btn-primary my-3" id="hide-button" />
 }

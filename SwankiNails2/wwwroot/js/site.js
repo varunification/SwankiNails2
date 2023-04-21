@@ -23,3 +23,5 @@
         mobileError.textContent = '';
       }
     });
+
+$('#hide-button').hide();
