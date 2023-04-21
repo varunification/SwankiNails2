@@ -32,6 +32,12 @@ namespace SwankiNails2.Controllers
                 return View(model);
             }
         }
+       
+        public IActionResult serviceForm(string service)
+        {
+            ViewBag.service = service;
+            return View();
+        }
 
 
         public IActionResult ThankYou()

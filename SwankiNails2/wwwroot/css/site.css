@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Source+Sans+Pro:wght@300&display=swap');
 
 html {
-    font-size: 14px;
+    font-size: 17px;
 }
 
 html {
@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+  margin-top: 300px;
 }
 .header {
     /* Set a black border at the top and bottom of the header */
@@ -65,7 +65,6 @@ body {
 
 #ProductsContainer {
     position: absolute;
-    top: 350px;
     left: 0;
     font-family: 'Lato', sans-serif;
 }
@@ -73,11 +72,6 @@ body {
     position:absolute;
     margin-top:310px;
     margin-left:30%;
-}
-.row {
-    position: absolute;
-    margin-top: 310px;
-
 }
 footer{
     
@@ -117,15 +111,7 @@ footer{
     padding: 0.5rem 1rem;
 }
 
-.col {
-    flex-basis: 0;
-    flex-grow: 1;
-    max-width: 100%;
-    padding: 0.5rem;
-}
-.d-flex{
-    margin-top:320px;
-}
+
 /* 
  * Always set the map height explicitly to define the size of the div element
  * that contains the map. 
@@ -146,9 +132,12 @@ footer{
     border-radius: 10px; /* Set the border radius to create rounded corners */
     overflow: hidden; /* Clip the image to the border radius */
 }
-.container{
-    margin-top:300px!important;
-}
 .thankyou {
     margin-top: 300px !important;
+}
+#about {
+    margin-top:200px !important;
+}
+.col mx-2{
+    height:45px;
 }

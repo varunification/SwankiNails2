@@ -1,7 +1,7 @@
 ﻿@using SwankiNails2.Models
 @model BookingViewModel
 
-<div class="container d-flex justify-content-center" id="myform">
+<div class="container d-flex justify-content-center">
     <form asp-controller="Bookings" asp-action="Form" class="col-md-6" method="post">
         <div class="form-group my-3">
             <label asp-for="Name"></label>
@@ -10,7 +10,7 @@
         </div>
         <div class="form-group my-3">
             <label asp-for="Email"></label>
-            <input asp-for="Email" class="form-control" id="email"/>
+            <input asp-for="Email" class="form-control" id="email" />
             <span asp-validation-for="Email" class="text-danger" id="email-error"></span>
         </div>
         <div class="form-group my-3">
@@ -19,13 +19,11 @@
             <span asp-validation-for="Mobile" class="text-danger" id="mobile-error"></span>
         </div>
         <div class="form-group my-3">
-            <label asp-for="Service"></label>
-            <select asp-for="Service" class="form-control">
-                <option>Select</option>
-                <option>Manicure</option>
-                <option>Pedicure</option>
-                <option>Haircut</option>
-            </select>
+            
+             <span>
+                @ViewBag.service
+             </span>
+            <input type="hidden" asp-for="Service" value="@ViewBag.service" />
             <span asp-validation-for="Service" class="text-danger"></span>
         </div>
         <button type="submit" class="btn btn-primary my-3">Submit</button>
