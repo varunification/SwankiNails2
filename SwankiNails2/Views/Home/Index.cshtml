@@ -1,62 +1,60 @@
-﻿<div class="d-flex flex-row justify-content-center">
-    <div class="col mx-2 my-5">
-        <div class="card border-0" style="width: 18rem;">
-            <img src="../images/card 1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">Variety of Ladies Gel nails, Mani, Pedis, Extensions, Nail art, Nail filing</p>
+﻿<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-sm-6 col-md-4 my-5">
+            <div class="card border-0">
+                <img src="../images/card 1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Variety of Ladies Gel nails, Mani, Pedis, Extensions, Nail art, Nail filing</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 my-5">
+            <div class="card border-0">
+                <img src="../images/card 2a.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Trained Nail technician to serve you to the best satisfaction level.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 my-5">
+            <div class="card border-0">
+                <img src="../images/card 3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Premium products like Shellac, O.P.I etc.</p>
+                </div>
             </div>
         </div>
     </div>
-    <div class="col mx-2 my-5">
-        <div class="card border-0" style="width: 18rem;">
-            <img src="../images/card 2a.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">Trained Nail technician to serve you to the best satisfaction level.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col mx-2 my-5">
-        <div class="card border-0" style="width: 18rem;">
-            <img src="../images/card 3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">Premium products like Shellac, O.P.I etc.</p>
-            </div>
-        </div>
-    </div>
-</div>
 
-<div class="d-flex flex-row justify-content-center my-5">
-    <div class="col mx-2">
-        <div class="card" style="width: 18rem;">
-            <img src="../images/images (2).jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Gel Nail paint both hands at just Rs. 499/-</h5>
-                
-                <a href="@Url.Action("serviceForm", "Bookings", new { service = "Nail paint" })" class="btn btn-primary my-3">Book Appointment</a>
+    <div class="row justify-content-center my-5">
+        <div class="col-sm-6 col-md-4">
+            <div class="card">
+                <img src="../images/images (2).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Gel Nail paint both hands at just Rs. 499/-</h5>
+                    <a href="@Url.Action("serviceForm", "Bookings", new { service = "Nail paint" })" class="btn btn-primary my-3">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="card">
+                <img src="../images/download (2).jfif" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Acrylic/Gel extensions both hands at Just Rs 1299/- (with gel paint)</h5>
+                    <a href="@Url.Action("serviceForm", "Bookings", new { service = "Acrylic/Gel extensions" })" class="btn btn-primary my-3">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="card">
+                <img src="../images/istockphoto-171379163-170667a.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Manicure And Pedicure starting from Rs 400/- and Rs 500/- respectively.</h5>
+                    <a href="@Url.Action("serviceForm", "Bookings", new { service = "Manicure And Pedicure" })" class="btn btn-primary my-3">Book Appointment</a>
+                </div>
             </div>
         </div>
     </div>
-    <div class="col mx-2">
-        <div class="card" style="width: 18rem;">
-            <img src="../images/download (2).jfif" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Acrylic/Gel extensions both hands at Just Rs 1299/- (with gel paint)</h5>
-               
-                <a href="@Url.Action("serviceForm", "Bookings", new { service = "Acrylic/Gel extensions" })" class="btn btn-primary my-3">Book Appointment</a>
-            </div>
-        </div>
-    </div>
-    <div class="col mx-2">
-        <div class="card" style="width: 18rem;">
-            <img src="../images/istockphoto-171379163-170667a.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Manicure And Pedicure starting from Rs 400/- and Rs 500/- respectively.</h5>
-                 
-                <a href="@Url.Action("serviceForm", "Bookings", new { service = "Manicure And Pedicure" })" class="btn btn-primary my-3">Book Appointment</a>
-            </div>
-        </div>
-    </div>
-</div>
 
 @using (Html.BeginForm("serviceForm", "Bookings", FormMethod.Get))
 {
