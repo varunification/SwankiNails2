@@ -22,7 +22,7 @@ body {
     /* padding-top: 5rem; */
     padding-top: 7rem;
     padding-bottom: 80px;
-    background-image: url(https://arena.km.ua/wp-content/uploads/3538533.jpg);
+    background-image: url(https://www.pixelandparcel.com/wp-content/uploads/2017/03/footer-background.jpg);
 }
 
 #footer2 {
@@ -114,14 +114,14 @@ li {
     }
 
     .use-links li a {
-        color: #303030;
+        color: #f9f9f9;
         font-size: 15px;
         font-weight: 500;
         color: #777777;
     }
 
         .use-links li a:hover {
-            color: #000;
+            color: #00ddff;
         }
 
 .address h2 {
@@ -153,7 +153,7 @@ li {
 
 .address-links .address1 {
     font-weight: 500;
-    font-size: 15px;
+    font-size: 25px;
     display: flex;
 }
 

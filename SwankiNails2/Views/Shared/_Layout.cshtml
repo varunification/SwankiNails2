@@ -12,7 +12,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark" id="mynavbar">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-controller="Home" asp-action="Index">Swanki Nails</a>
+                <a class="navbar-brand" asp-controller="Home" asp-action="Index">Swanky Nails</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -22,7 +22,7 @@
                             <a class="nav-link"  asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-controller="Home" asp-action="About">About</a>
+                            <a class="nav-link" asp-controller="Home" asp-action="About">About Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" asp-controller="Services" asp-action="Products">Services</a>
@@ -30,7 +30,9 @@
                         <li class="nav-item">
                             <a class="nav-link" asp-controller="Home" asp-action="Contact">Contact</a>
                         </li>
-
+                        <li class="nav-item">
+                            <a class="nav-link" id="phone">Phone: +91-8484866248</a>
+                        </li>
 
                     </ul>
                   
@@ -39,10 +41,11 @@
             </div>
         </nav>
         
-        <div class="header ml-auto"> 
-
-        </div>
+        
     </header>
+    <div class="header ml-auto" id="mobile">
+        <span>Phone: 8484866248</span>
+    </div>
     <div class="container my-auto">
         <span class="badge badge-danger"><a asp-controller="Bookings" asp-action="Form" class=" text-white">Book Appointment</a></span>
 
@@ -57,20 +60,20 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="useful-link">
-                        <h2>Useful Links</h2>
+                        <h1>Useful Links</h1>
                         <img src="./assets/images/about/home_line.png" alt="" class="img-fluid">
                         <div class="use-links">
-                            <li><a asp-controller="Home" asp-action="Index"><i class="fa-solid fa-angles-right"></i> Home</a></li>
-                            <li><a asp-controller="Home" asp-action="About"><i class="fa-solid fa-angles-right"></i> About Us</a></li>
+                            <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                            <li><a asp-controller="Home" asp-action="About">About Us</a></li>
                             
-                            <li><a asp-controller="Home" asp-action="Contact"><i class="fa-solid fa-angles-right"></i> Contact</a></li>
+                            <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
                         </div>
                     </div>
 
                 </div>
                 <div class="col-md-4">
                     <div class="social-links">
-                        <h2>Follow Us</h2>
+                        <h1>Follow Us</h1>
                         <div class="social-icons">
                            
                             <div id="insta"><a href="https://www.Instagram.com/nails_swank?igshid=ZDdkNTZiNTM="><img class="rounded" src="https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/81af6121f84c41a5b4391d7d37fce12a.png" /></a></div>
@@ -82,14 +85,13 @@
                 </div>
                 <div class="col-md-4">
                     <div class="address">
-                        <h2>Address</h2>
+                        <h1>Address</h1>
                         <img src="./assets/images/about/home_line.png" alt="" class="img-fluid">
                         <div class="address-links">
                             <li class="address1">
-                                <i class="fa-solid fa-location-dot"></i> Building A7, Kumar Park Infinia, Phursungi, Pune, Maharashtra, 412308.
-                            </li>
-                            <li><a href=""><i class="fa-solid fa-phone"></i> +91 8484866248</a></li>
-                            <li><a href=""><i class="fa-solid fa-envelope"></i> mail@1234567.com</a></li>
+                                <i class="fa-solid fa-location-dot"></i> <p>Building A7, Kumar Park Infinia, Phursungi, Pune, Maharashtra, 412308.</p>
+                            <li class="address1"><p>+91 8484866248</p></a></li>
+                            <li class="address1"><p>mail@1234567.com</p></a></li>
                         </div>
                     </div>
                 </div>

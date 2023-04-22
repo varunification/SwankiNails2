@@ -31,7 +31,11 @@ body {
     width: 100%;
     background-color:#000000;
 }
-
+@media screen and (min-width: 800px) {
+   .header{
+       height:400px;
+   }
+}
 
 #mynavbar {
     /* Set a fixed position at the top of the page */
@@ -48,20 +52,14 @@ body {
     /* Set width to 100% to fill the full page width */
     width: 100%;
 }
-
+#phone{
+    margin-left:30px
+}
 
 
 .navbar-nav {
     display: flex;
     align-items: center;
-}
-
-#phonenumber {
-    block-size: auto;
-    background-color: black;
-    color: white;
-    float:right;
-    margin-left:600px !important;
 }
 
 #ProductsContainer {
@@ -76,7 +74,10 @@ body {
 }
 footer{
     
-    margin-top:100px;
+    margin-top:40px;
+}
+footer p,footer a, footer h1,footer div{
+    color:#ffffff;
 }
 .badge {
     float: right;
@@ -144,4 +145,13 @@ footer{
 }
 #hide-button {
     display: none;
+}
+#mobile{
+    
+}
+.facilities img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 9rem;
 }
