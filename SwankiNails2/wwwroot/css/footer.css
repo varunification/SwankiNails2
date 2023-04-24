@@ -48,7 +48,7 @@ body {
 
     .social-links h2 {
         padding-bottom: 15px;
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: 600;
     }
 
@@ -85,7 +85,7 @@ body {
             padding: 0.4rem 1rem 0.4rem 1rem;
             border-radius: 3px;
             color: #000000;
-            font-size: 16px;
+            font-size: 1.25rem;
             margin-right: 12px;
         }
 
@@ -95,7 +95,7 @@ li {
 
 .useful-link h2 {
     padding-bottom: 15px;
-    font-size: 20px;
+    font-size: 1.35rem;
     font-weight: 600;
 }
 
@@ -107,15 +107,15 @@ li {
     line-height: 32px;
 }
 
-    .use-links li i {
-        font-size: 14px;
+    .use-links li 1 {
+        font-size: 1.25rem;
         padding-right: 8px;
         color: #898989;
     }
 
     .use-links li a {
         color: #f9f9f9;
-        font-size: 15px;
+        font-size: 1.25rem;
         font-weight: 500;
         color: #777777;
     }
@@ -126,7 +126,7 @@ li {
 
 .address h2 {
     padding-bottom: 15px;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
 }
 
@@ -135,10 +135,10 @@ li {
 }
 
 .address-links li a {
-    color: #000000;
+    color: #fff;
     font-size: 15px;
     font-weight: 500;
-    color: #777777;
+   
 }
 
 .address-links li i {

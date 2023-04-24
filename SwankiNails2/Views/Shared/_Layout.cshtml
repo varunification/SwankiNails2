@@ -61,10 +61,10 @@
                         <h1>Useful Links</h1>
                         <img src="./assets/images/about/home_line.png" alt="" class="img-fluid">
                         <div class="use-links">
-                            <li><a asp-controller="Home" asp-action="Index">Home</a></li>
-                            <li><a asp-controller="Home" asp-action="About">About Us</a></li>
+                            <li><p><a asp-controller="Home" asp-action="Index">Home</a></p></li>
+                            <li><p><a asp-controller="Home" asp-action="About">About Us</a></p></li>
                             
-                            <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
+                            <li><p><a asp-controller="Home" asp-action="Contact">Contact</a></p></li>
                         </div>
                     </div>
 
@@ -89,7 +89,7 @@
                             <li class="address1">
                                 <i class="fa-solid fa-location-dot"></i> <p>Building A7, Kumar Park Infinia, Phursungi, Pune, Maharashtra, 412308.</p>
                             <li class="address1"><p>+91 8484866248</p></a></li>
-                            <li class="address1"><p>mail@1234567.com</p></a></li>
+                            <li class="address1"><p>Nailsswankysalon@gmail</p></a></li>
                         </div>
                     </div>
                 </div>
@@ -103,7 +103,13 @@
     <section id="copy-right">
         <div class="copy-right-sec">
             <i class="fa-solid fa-copyright"></i>
-            <p>© 2023 Swanky Nails</p>
+            <div style="display: inline;">
+                <p style="display: inline;">©</p>
+                <span id="year" style="display: inline;">@DateTime.Now.Year</span>
+                <p style="display: inline-block;">Swanky Nails</p>
+            </div>
+
+
 
 
         </div>

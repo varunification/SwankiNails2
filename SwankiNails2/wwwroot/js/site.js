@@ -24,4 +24,3 @@
       }
     });
 
-$('#hide-button').hide();
