@@ -142,8 +142,9 @@ footer p,footer a, footer h1,footer div{
     border-radius: 10px; /* Set the border radius to create rounded corners */
     overflow: hidden; /* Clip the image to the border radius */
 }
-.thankyou {
-    margin-top: 300px !important;
+#thankyou {
+    clear:both;
+
 }
 #about {
     padding-left:4rem;
@@ -176,5 +177,8 @@ div#productsdiv {
     }
     .about_us_container{
         margin-top:110px;
+    }
+    #thankyou{
+        padding-top:70px;
     }
 }
