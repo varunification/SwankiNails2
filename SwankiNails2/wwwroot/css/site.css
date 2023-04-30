@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Source+Sans+Pro:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 :root{
     --fotter-font-size: 1.25rem;
 }
 html {
     font-size: 17px;
+    font-family: 'Roboto Slab', serif;
 }
 
 html {
@@ -144,6 +145,7 @@ footer p,footer a, footer h1,footer div{
 }
 #thankyou {
     clear:both;
+    padding:20px;
 
 }
 #about {
