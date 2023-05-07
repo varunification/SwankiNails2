@@ -2,7 +2,7 @@
 {
     public class EmailProvider
     {
-        private readonly string _connectionString;
+        public readonly string _connectionString;
 
         public EmailProvider(string connectionString)
         {

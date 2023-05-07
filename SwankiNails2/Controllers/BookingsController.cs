@@ -8,11 +8,11 @@ namespace SwankiNails2.Controllers
     public class BookingsController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly EmailProvider _connectionString;
-        public BookingsController(ILogger<HomeController> logger, EmailProvider connectionString)
+        private readonly EmailProvider _emailProvider;
+        public BookingsController(ILogger<HomeController> logger, EmailProvider emailProvider)
         {
             _logger = logger;
-            _connectionString = connectionString;
+            _emailProvider= emailProvider;
         }
 
         public IActionResult Form()
@@ -26,7 +26,9 @@ namespace SwankiNails2.Controllers
             {
                 // Do something with the form data, e.g. save it to a database
                 // Redirect to a thank-you page or display a success message
-                Console.WriteLine(model.Name + model.Email + model.Mobile + model.Service);
+               // Console.WriteLine(model.Name + model.Email + model.Mobile + model.Service);
+                emailsender dm = new(_emailProvider._connectionString, model);
+                emailsender dm1= new(_emailProvider._connectionString, model);
                 return RedirectToAction("ThankYou");
             }
             else
