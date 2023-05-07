@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SwankiNails2.Models;
+using SwankiNails2.utility;
 using System.Diagnostics;
 
 namespace SwankiNails2.Controllers
@@ -7,10 +8,11 @@ namespace SwankiNails2.Controllers
     public class BookingsController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
-        public BookingsController(ILogger<HomeController> logger)
+        private readonly EmailProvider _connectionString;
+        public BookingsController(ILogger<HomeController> logger, EmailProvider connectionString)
         {
             _logger = logger;
+            _connectionString = connectionString;
         }
 
         public IActionResult Form()

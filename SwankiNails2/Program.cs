@@ -1,10 +1,25 @@
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using SwankiNails2.utility;
+
 var builder = WebApplication.CreateBuilder(args);
+
+// Add configuration
+builder.Configuration.AddJsonFile("appsettings.json");
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped(provider =>
+{
+    var configuration = provider.GetRequiredService<IConfiguration>();
+    var connectionString = configuration.GetConnectionString("MyEmail");
+    return new EmailProvider(connectionString);
+});
 
-var app = builder.Build();
-
+var app=builder.Build();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
