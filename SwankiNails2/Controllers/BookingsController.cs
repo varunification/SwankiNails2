@@ -26,9 +26,10 @@ namespace SwankiNails2.Controllers
             {
                 // Do something with the form data, e.g. save it to a database
                 // Redirect to a thank-you page or display a success message
-               // Console.WriteLine(model.Name + model.Email + model.Mobile + model.Service);
-                emailsender dm = new(_emailProvider._connectionString, model);
-                emailsender dm1= new(_emailProvider._connectionString, model);
+                // Console.WriteLine(model.Name + model.Email + model.Mobile + model.Service);
+
+                //emailsender dm = new(_emailProvider._connectionString, model);
+                //emailsender dm1= new(_emailProvider._connectionString, model);
                 return RedirectToAction("ThankYou");
             }
             else
